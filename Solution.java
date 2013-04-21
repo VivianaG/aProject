@@ -1,4 +1,3 @@
-
 import java.util.*;
 
 class Board{
@@ -10,7 +9,8 @@ class Board{
 	 	 oponentLine ,
 	 	 oponentColumn;
 	 String player,oponent;
-	
+	 
+	/*Metoda Board care primeste ca parametri doua int-uri: lines, columns*/	
 	public Board(int lines , int columns){
 		this.lines 	 = lines;
 		this.columns = columns;
@@ -28,6 +28,7 @@ class Board{
 		setPlayers(b.player, b.oponent);
 	}
 	
+	/*Metoda set care primeste doua int-uri(line, column) si un string s si seteaza linia si coloana din board la s"*/	
 	public void set(int line , int column , String s){
 		board[line][column] = s;
 	}
